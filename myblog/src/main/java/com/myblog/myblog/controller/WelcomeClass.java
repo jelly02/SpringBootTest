@@ -16,8 +16,7 @@ public class WelcomeClass {
     }
 
     @GetMapping("/webblogpage")
-    @ResponseBody
     public String viewPage(){
-        return "Index";
+        return "Index"; // Template 폴더에 있는 'index' 라는 이름의 파일을 연결해줘!
     }
 }
