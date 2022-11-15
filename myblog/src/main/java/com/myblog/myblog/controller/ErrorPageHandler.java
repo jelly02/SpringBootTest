@@ -21,6 +21,7 @@ public class ErrorPageHandler implements ErrorController {
 
     @RequestMapping(value = "/error")
     public String handleError(HttpServletRequest request, Model model) {
+
         Object status = request.getAttribute(RequestDispatcher.ERROR_STATUS_CODE);
         HttpStatus httpStatus = HttpStatus.valueOf(Integer.valueOf(status.toString()));
 
